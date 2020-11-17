@@ -36,21 +36,24 @@ for(i = 0; i < topMovies.length; i++){
 }
 console.log(topMovies);
 
-function makelist(){
-    let movielist = document.createElement(`li`);
-    movielist.textcontent(topMovies)
-    ol.appendchild(movielist)
-    ol.appendchild(li)
-    ol.appendchild(li)
-    ol.appendchild(li)
-    ol.appendchild(li)
-}
+
 // let topMovies = topMovies.map(function (value, index, array);
-function x(item) {
+
     // let movie = document.createElement(`li`)  []
     
-}
+
 
 function myFunction() {
-    document.getElementById("movielist").innerHTML = topMovies.map(getFullName);
+    document.getElementById("movielist") = topMovies.map(makelist);
+
+    function makelist(){
+        let movielist = document.createElement(`li`);
+        movielist.textcontent(topMovies)
+        ol.appendchild(movielist)
+        ol.appendchild(li)
+        ol.appendchild(li)
+        ol.appendchild(li)
+        ol.appendchild(li)
+    }
+
 };
